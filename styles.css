@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center; /* Center button vertically */
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 26px;
+    width: 174px;
+    margin-right: 5px; /* Add some space between input and button */
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+#copyToClipboardButton, #randomColorButton, #colorHistoryButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+#colorHistoryContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 48px;
+}
+
+#colorHistoryButton {
+    margin-bottom: 10px;
+}
+
+#colorHistoryDropdown {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#colorHistoryDropdown.hidden {
+    display: none;
+}
+
+.colorSwatch {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
